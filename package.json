@@ -1,7 +1,7 @@
 {
   "name": "car-work",
   "version": "1.0.0",
-  "description": "",
+  "description": "Car service tracker for automotive enthusiasts",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./bin/www",
