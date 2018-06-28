@@ -13,10 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   }, {});
+
   Vehicle.associate = (models) => {
-    // associations can be defined here
     Vehicle.belongsTo(models.User, {
       foreignKey: 'userId',
+      onDelete: 'CASCADE', // deleting a user will delete a their vehicals
     });
   };
   return Vehicle;
