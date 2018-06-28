@@ -4,14 +4,16 @@
     "password": null,
     "database": "auto-service-dev",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "operatorsAliases": false
   },
   "test": {
     "username": "georgesmith-sweeper",
     "password": null,
     "database": "auto-service-test",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "operatorsAliases": false
   },
   "production": {
     "username": "georgesmith-sweeper",
