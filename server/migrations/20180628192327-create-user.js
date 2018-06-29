@@ -7,11 +7,24 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      first_name: {
+      firstName: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
-      last_name: {
+      lastName: {
+        allowNull: false,
         type: Sequelize.STRING,
+      },
+      email: {
+        allowNull: false,
+        type: Sequelize.STRING,
+        unique: {
+          name: 'users_email',
+          msg: 'A user with this email already exists',
+        },
+        validate: {
+          isEmail: true,
+        },
       },
       createdAt: {
         allowNull: false,
